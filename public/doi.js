@@ -40,76 +40,25 @@ let decleration18 = 'Every solution to the humanitarian crisis in Syria must als
 let decleration19 = 'Iran’s neighbors have paid a heavy toll for the region’s [regime’s] agenda of aggression and expansion. That is why so many countries in the Middle East strongly supported my decision to withdraw the United States from the horrible 2015 Iran Nuclear Deal and re-impose nuclear sanctions. The Iran deal was a windfall for Iran’s leaders. In the years since the deal was reached, Iran’s military budget grew nearly 40 percent. The dictatorship used the funds to build nuclear-capable missiles, increase internal repression, finance terrorism, and fund havoc and slaughter in Syria and Yemen.';
 
 
-let decleration20 ='The United States has launched a campaign of economic pressure to deny the regime the funds it needs to advance its bloody agenda. Last month, we began re-imposing hard-hitting nuclear sanctions that had been lifted under the Iran deal. Additional sanctions will resume November 5th, and more will follow. And we’re working with countries that import Iranian crude oil to cut their purchases substantially. We cannot allow the world’s leading sponsor of terrorism to possess the planet’s most dangerous weapons. We cannot allow a regime that chants “Death to America,” and that threatens Israel with annihilation, to possess the means to deliver a nuclear warhead to any city on Earth. Just can’t do it.';
+let decleration20 = 'The United States has launched a campaign of economic pressure to deny the regime the funds it needs to advance its bloody agenda. Last month, we began re-imposing hard-hitting nuclear sanctions that had been lifted under the Iran deal. Additional sanctions will resume November 5th, and more will follow. And we’re working with countries that import Iranian crude oil to cut their purchases substantially. We cannot allow the world’s leading sponsor of terrorism to possess the planet’s most dangerous weapons. We cannot allow a regime that chants “Death to America,” and that threatens Israel with annihilation, to possess the means to deliver a nuclear warhead to any city on Earth. Just can’t do it. We ask all nations to isolate Iran’s regime as long as its aggression continues. And we ask all nations to support Iran’s people as they struggle to reclaim their religious and righteous destiny.';
+
+let decleration21 = 'This year, we also took another significant step forward in the Middle East. In recognition of every sovereign state to determine its own capital, I moved the U.S. Embassy in Israel to Jerusalem. The United States is committed to a future of peace and stability in the region, including peace between the Israelis and the Palestinians. That aim is advanced, not harmed, by acknowledging the obvious facts. America’s policy of principled realism means we will not be held hostage to old dogmas, discredited ideologies, and so-called experts who have been proven wrong over the years, time and time again. This is true not only in matters of peace, but in matters of prosperity. We believe that trade must be fair and reciprocal. The United States will not be taken advantage of any longer. For decades, the United States opened its economy — the largest, by far, on Earth — with few conditions. We allowed foreign goods from all over the world to flow freely across our borders.';
+
+let decleration22 = 'Yet, other countries did not grant us fair and reciprocal access to their markets in return. Even worse, some countries abused their openness to dump their products, subsidize their goods, target our industries, and manipulate their currencies to gain unfair advantage over our country. As a result, our trade deficit ballooned to nearly $800 billion a year. For this reason, we are systematically renegotiating broken and bad trade deals.';
+
+let decleration23 = 'Last month, we announced a groundbreaking U.S.-Mexico trade agreement. And just yesterday, I stood with President Moon to announce the successful completion of the brand new U.S.-Korea trade deal. And this is just the beginning. Many nations in this hall will agree that the world trading system is in dire need of change. For example, countries were admitted to the World Trade Organization that violate every single principle on which the organization is based. While the United States and many other nations play by the rules, these countries use government-run industrial planning and state-owned enterprises to rig the system in their favor. They engage in relentless product dumping, forced technology transfer, and the theft of intellectual property.';
+
+let decleration24 = 'The United States lost over 3 million manufacturing jobs, nearly a quarter of all steel jobs, and 60,000 factories after China joined the WTO. And we have racked up $13 trillion in trade deficits over the last two decades. But those days are over. We will no longer tolerate such abuse. We will not allow our workers to be victimized, our companies to be cheated, and our wealth to be plundered and transferred. America will never apologize for protecting its citizens. The United States has just announced tariffs on another $200 billion in Chinese-made goods for a total, so far, of $250 billion. I have great respect and affection for my friend, President Xi, but I have made clear our trade imbalance is just not acceptable. China’s market distortions and the way they deal cannot be tolerated. As my administration has demonstrated, America will always act in our national interest.';
+
+
+let decleration25 = 'I spoke before this body last year and warned that the U.N. Human Rights Council had become a grave embarrassment to this institution, shielding egregious human rights abusers while bashing America and its many friends. Our Ambassador to the United Nations, Nikki Haley, laid out a clear agenda for reform, but despite reported and repeated warnings, no action at all was taken. So the United States took the only responsible course: We withdrew from the Human Rights Council, and we will not return until real reform is enacted.'
 
 
 
-
-
-
+let decleration26 = 'For similar reasons, the United States will provide no support in recognition to the International Criminal Court. As far as America is concerned, the ICC has no jurisdiction, no legitimacy, and no authority. The ICC claims near-universal jurisdiction over the citizens of every country, violating all principles of justice, fairness, and due process. We will never surrender America’s sovereignty to an unelected, unaccountable, global bureaucracy. America is governed by Americans. We reject the ideology of globalism, and we embrace the doctrine of patriotism. Around the world, responsible nations must defend against threats to sovereignty not just from global governance, but also from other, new forms of coercion and domination. In America, we believe strongly in energy security for ourselves and for our allies. We have become the largest energy producer anywhere on the face of the Earth.';
 
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-// We ask all nations to isolate Iran’s regime as long as its aggression continues. And we ask all nations to support Iran’s people as they struggle to reclaim their religious and righteous destiny.
-//
-// This year, we also took another significant step forward in the Middle East. In recognition of every sovereign state to determine its own capital, I moved the U.S. Embassy in Israel to Jerusalem.
-//
-// The United States is committed to a future of peace and stability in the region, including peace between the Israelis and the Palestinians. That aim is advanced, not harmed, by acknowledging the obvious facts.
-//
-// America’s policy of principled realism means we will not be held hostage to old dogmas, discredited ideologies, and so-called experts who have been proven wrong over the years, time and time again. This is true not only in matters of peace, but in matters of prosperity.
-//
-// We believe that trade must be fair and reciprocal. The United States will not be taken advantage of any longer.
-//
-// For decades, the United States opened its economy — the largest, by far, on Earth — with few conditions. We allowed foreign goods from all over the world to flow freely across our borders.
-//
-// Yet, other countries did not grant us fair and reciprocal access to their markets in return. Even worse, some countries abused their openness to dump their products, subsidize their goods, target our industries, and manipulate their currencies to gain unfair advantage over our country. As a result, our trade deficit ballooned to nearly $800 billion a year.
-//
-// For this reason, we are systematically renegotiating broken and bad trade deals.
-//
-// Last month, we announced a groundbreaking U.S.-Mexico trade agreement. And just yesterday, I stood with President Moon to announce the successful completion of the brand new U.S.-Korea trade deal. And this is just the beginning.
-//
-// Many nations in this hall will agree that the world trading system is in dire need of change. For example, countries were admitted to the World Trade Organization that violate every single principle on which the organization is based. While the United States and many other nations play by the rules, these countries use government-run industrial planning and state-owned enterprises to rig the system in their favor. They engage in relentless product dumping, forced technology transfer, and the theft of intellectual property.
-//
-// The United States lost over 3 million manufacturing jobs, nearly a quarter of all steel jobs, and 60,000 factories after China joined the WTO. And we have racked up $13 trillion in trade deficits over the last two decades.
-//
-// But those days are over. We will no longer tolerate such abuse. We will not allow our workers to be victimized, our companies to be cheated, and our wealth to be plundered and transferred. America will never apologize for protecting its citizens.
-//
-// The United States has just announced tariffs on another $200 billion in Chinese-made goods for a total, so far, of $250 billion. I have great respect and affection for my friend, President Xi, but I have made clear our trade imbalance is just not acceptable. China’s market distortions and the way they deal cannot be tolerated.
-//
-// As my administration has demonstrated, America will always act in our national interest.
-//
-// I spoke before this body last year and warned that the U.N. Human Rights Council had become a grave embarrassment to this institution, shielding egregious human rights abusers while bashing America and its many friends.
-//
-// Our Ambassador to the United Nations, Nikki Haley, laid out a clear agenda for reform, but despite reported and repeated warnings, no action at all was taken.
-//
-// So the United States took the only responsible course: We withdrew from the Human Rights Council, and we will not return until real reform is enacted.
-//
-// For similar reasons, the United States will provide no support in recognition to the International Criminal Court. As far as America is concerned, the ICC has no jurisdiction, no legitimacy, and no authority. The ICC claims near-universal jurisdiction over the citizens of every country, violating all principles of justice, fairness, and due process. We will never surrender America’s sovereignty to an unelected, unaccountable, global bureaucracy.
-//
-// America is governed by Americans. We reject the ideology of globalism, and we embrace the doctrine of patriotism.
-//
-// Around the world, responsible nations must defend against threats to sovereignty not just from global governance, but also from other, new forms of coercion and domination.
-//
-// In America, we believe strongly in energy security for ourselves and for our allies. We have become the largest energy producer anywhere on the face of the Earth.
-//
-// The United States stands ready to export our abundant, affordable supply of oil, clean coal, and natural gas.
-//
-// OPEC and OPEC nations, are, as usual, ripping off the rest of the world, and I don’t like it. Nobody should like it. We defend many of these nations for nothing, and then they take advantage of us by giving us high oil prices. Not good.
+// let decleration27 = 'The United States stands ready to export our abundant, affordable supply of oil, clean coal, and natural gas. OPEC and OPEC nations, are, as usual, ripping off the rest of the world, and I don’t like it. Nobody should like it. We defend many of these nations for nothing, and then they take advantage of us by giving us high oil prices. Not good.
 //
 // We want them to stop raising prices, we want them to start lowering prices, and they must contribute substantially to military protection from now on. We are not going to put up with it — these horrible prices — much longer.
 //
@@ -183,7 +132,16 @@ let decleration20 ='The United States has launched a campaign of economic pressu
 //
 // Thank you. God bless you. And God bless the nations of the world.
 //
-// Thank you very much. Thank you. (Applause.)
+// Thank you very much. Thank you. (Applause.)';
+//
+//
+
+
+
+
+
+
+
 //
 // NEXT UP IN WORLD
 // A former spy explains why Manafort is crucial to Mueller’s Russia investigation

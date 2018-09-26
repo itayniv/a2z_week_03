@@ -54,7 +54,7 @@ function init(){
     addElementHeader(headerSplit[i]+ " ",("headerSpan"+i));
   }
 
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 26; i++) {
   allDec = allDec + " " + allDecleration[i+1];
   }
 
