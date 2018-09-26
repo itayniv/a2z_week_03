@@ -12,133 +12,115 @@ let searchResult1;
 let searchResult2;
 let searchResult1discription;
 let searchResult2discription;
-
 let wordOne;
+let allDec = '';
+let currSpanID;
+
+let antonymRecieved = [];
+
+let allDecleration = [decleration1, decleration2, decleration3, decleration4, decleration5, decleration6, decleration7, decleration8, decleration9, decleration10, decleration11, decleration12, decleration13, decleration14, decleration15, decleration16, decleration17, decleration18, decleration19, decleration20];
+
+
 /// on page load do the next things:
 
 $.ajax({
   url: "/GetGridSize",
   context: document.body
 }).done(function(data) {
-
+  // console.log(data);
 });
 
 //on page load finish do the next things:
 
+
 window.onload = function() {
   onLoad = true;
-  // console.log("window_load");
+  console.log("window_load");
+  init();
 };
 
 
-
-function searchNoOne() {
-  // wikiInputOne = document.getElementById("wikinumber01").value;
-  // let term = wikiInputOne;
-  // url = searchUrl + term;
-  // // console.log("search01", url);
-  // loadJSON1(url);
-}
-
-function onFocus() {
-  wikiInputOne = document.getElementById("wikinumber01").value;
-  let term = wikiInputOne;
-  url = searchUrl + term;
-  // loadJSON1(url);
-
-  fetch(url)
-  .then(response => response.json())
-  .then(json => {
-    searchResult1 = json[1][0];
-    searchResult1discription = json[2][0];
-    console.log(searchResult1, searchResult1discription);
-  })
-  .catch(err => console.log("promiseerror", err));
-
-}
+function init(){
 
 
-function searchNoTwo(){
-  wikiInputTwo = document.getElementById("wikinumber02").value;
-  let term = wikiInputTwo;
-  url = searchUrl + term;
-  // loadJSON2(url);
+  // document.getElementById("header").innerHTML = Trumpheader;
 
-  fetch(url)
-  .then(response => response.json())
-  .then(json => {
-    searchResult2 = json[1][0];
-    searchResult2discription = json[2][0];
-    console.log(searchResult2, searchResult2discription);
-  }).then(refreshcontent2)
-  .catch(err => console.log("promiseerror", err));
 
+  let headerSplit =  Trumpheader.split(" ");
+  console.log(headerSplit);
+
+  for (let i = 0; i < headerSplit.length; i++) {
+    // console.log(allDecSplit[i]);
+    addElementHeader(headerSplit[i]+ " ",("headerSpan"+i));
+  }
+
+  for (let i = 0; i < 20; i++) {
+  allDec = allDec + " " + allDecleration[i+1];
+  }
+
+  let allDecSplit = allDec.split(" ");
+
+  for (let i = 0; i < allDecSplit.length; i++) {
+    // console.log(allDecSplit[i]);
+    addElement(allDecSplit[i]+ " ",("span"+i));
+  }
+
+
+
+  socket.on('sendAntonym', function(antonyms){
+    // let seqarr = steps;
+    // console.log('new array recieved from server - steps', antonyms);
+    antonymRecieved = antonyms;
+    if (antonymRecieved[0] != undefined){
+      let thisstr = document.getElementById(currSpanID).innerHTML;
+      var result = thisstr.strike();
+
+      document.getElementById(currSpanID).innerHTML = result + "  " + antonymRecieved[0] + " ";
+    }
+
+  });
 }
 
 
-function refreshcontent2(){
-  mixedContent();
+
+
+function clickSpan(e){
+  let word = e.target.innerHTML;
+  // let checkedNewPeriod = word.replace(/\./g, "");
+  // let checkedNewComa = checkedNewPeriod.replace(/\,/g, "");
+  let checkedWord = word.replace(/[^A-Za-z0-9]/g, ' ');
+  // console.log(checkedWord);
+  currSpanID = e.target.id;
+  socket.emit('sendGesture', {'Data': "currCell", 'wordsToflip': checkedWord});
 }
 
 
-function mixedContent(){
+function addElement (content, spanID) {
+  // create a new span element
+  var newSpan = document.createElement("span");
+  newSpan.id = spanID ;
+  // and give it some content
+  var newContent = document.createTextNode(content);
+  // add the text node to the newly created div
+  newSpan.appendChild(newContent);
+  // add the newly created element and its content into the DOM
+  var currentSpan = document.getElementById("div1");
+  document.getElementById('spanDIVS').appendChild(newSpan);
+  // document.body.insertBefore(newSpan, currentSpan);
+  newSpan.addEventListener('click', clickSpan);
+}
 
-  document.getElementById("answerDiv").style.display = "block";
-
-  //combine two topics
-  let result = searchResult1.concat(searchResult2);
-  let string = result.split("");
-  string.sort(function(a, b){return 0.5 - Math.random()});
-  let shortenedName = string.length = (Math.floor(Math.random() * 7) + 5 );
-  // console.log(shortenedName);
-
-  let combinedNameString = string.toString();
-  combinedNameString = combinedNameString.replace(/#|,/g,'')
-  let combinedNameStringLowercase = combinedNameString.toLowerCase();
-
-  //remove first letter
-  let combinedNameStringLowercaseWithout = combinedNameStringLowercase.substr(1);
-
-  //get the first letter
-  let firstLetter = combinedNameStringLowercase.charAt(0); // alerts 's'
-  let firstLetterUpper = firstLetter.toUpperCase();
-  // console.log(firstLetterUpper);
-
-  let finalPar = firstLetterUpper+combinedNameStringLowercaseWithout;
-  document.getElementById("mixedHeader").innerHTML = firstLetterUpper+combinedNameStringLowercaseWithout;
-  // console.log("finalPar", finalPar);
-
-
-//mix two topics
-
-  let def1 = searchResult1discription;
-  let res1 = def1.split(" ");
-
-  let def2 = searchResult2discription;
-  let res2 = def2.split(" ");
-
-  //combine two arrays
-  let combinedArrays = res1.concat(res2);
-
-
-  combinedArrays.sort(function(a, b){return 0.5 - Math.random()});
-  let shortPar = combinedArrays;
-  combinedArrays.length = 50;
-  let combinedString = combinedArrays.toString();
-  combinedString = combinedString.toLowerCase();
-
-  //remove first letter
-  let combinedStringMinLetter = combinedString.substr(1);
-  let firstLetterParagraph = combinedString.charAt(0); // alerts 's'
-  let firstLetterParagraphUpper = firstLetter.toLowerCase();
-
-  let newParagraphUpperLetter = firstLetterParagraphUpper + combinedStringMinLetter;
-
-
-
-  let combinedNoComma = newParagraphUpperLetter;
-  newParagraphUpperLetter = combinedNoComma.replace(/#|,/g,' ');
-  // let combinedlowercase = combinedNoComma.toLowerCase();
-
-  document.getElementById("mixedAnswer").innerHTML= "A " + finalPar + " " + "is " + newParagraphUpperLetter + ".";
+function addElementHeader (content, spanID) {
+  // create a new span element
+  var newSpan = document.createElement("span");
+  newSpan.id = spanID ;
+  // and give it some content
+  var newContent = document.createTextNode(content);
+  // add the text node to the newly created div
+  newSpan.appendChild(newContent);
+  // add the newly created element and its content into the DOM
+  var currentSpan = document.getElementById("div1");
+  document.getElementById('header').appendChild(newSpan);
+  // document.body.insertBefore(newSpan, currentSpan);
+  newSpan.addEventListener('click', clickSpan);
 }

@@ -36,7 +36,10 @@
 
 .textbox-padding{
   text-align: center;
-    height: 250px;
+    height: 140px;
+    font-size:  40px;
+    font-family: 'Archivo Black', sans-serif;
+
 }
     .textboxrunning {
       padding-top: 20px;

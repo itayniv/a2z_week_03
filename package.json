@@ -8,8 +8,9 @@
     "ejs": "^2.5.7",
     "express": "^4.11.0",
     "mongojs": "^2.5.0",
-    "socket.io": "^2.0.4",
+    "socket.io": "^2.1.1",
     "socket.io-client": "^2.0.4",
+    "thesaurus-com": "^1.2.0",
     "timepiece": "^0.4.0",
     "tone": "^0.11.11",
     "wikipedia-js": "0.0.6"
