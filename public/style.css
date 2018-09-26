@@ -41,6 +41,16 @@
     font-family: 'Archivo Black', sans-serif;
 
 }
+
+.textbox-padding-header{
+  text-align: center;
+    height: 140px;
+    font-size:  45px;
+    font-family: 'Archivo Black', sans-serif;
+    position:relative;
+
+
+}
     .textboxrunning {
       padding-top: 20px;
       padding-left: 30%;
